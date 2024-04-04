@@ -1,0 +1,20 @@
+.box{
+    border: 1px solid black;
+    height: 100px;
+    width: 150px;   
+}
+#id1{
+    background-image: linear-gradient(violet,indigo,blue,green,yellow,orange,red);
+     /* by default gradient set up to down */
+}
+#id2{
+    background-image: linear-gradient(to right,violet,indigo,blue,green,yellow,orange,red);
+}
+#id3{
+    background-image: linear-gradient(25deg,violet,indigo,blue,green,yellow,orange,red);
+}
+#id4{
+    background-image: linear-gradient(to top right,violet,indigo,blue,green,yellow,orange,red);
+}#radial{
+    background-image: radial-gradient(circle,violet ,indigo,blue,green,yellow,orange,red);
+}

@@ -1,0 +1,24 @@
+.container
+{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    border: solid red;
+}
+
+.box
+{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border: 2px solid;
+    background-color: aqua;
+    transition: 1s;
+    transition-property: background-color;
+    transition-delay: 1s;
+    
+}
+.box:hover
+{
+    background-color: brown;
+}

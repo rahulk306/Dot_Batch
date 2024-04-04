@@ -1,0 +1,7 @@
+react routers -> used to move from one page to another page withour reloading the main page. used to navigate bt different pages like home page contact us page nav page payment page.
+
+in reality different components loads on the same page as we know react is a spa single page application -> hume bs lgta hai ke different pages loads ho rhe hai 
+
+react router ek type ka frame work hai 
+
+NavLink -> clicked components ko ek active class se add kr deta hai jiske help se hum pta kr skte hai ke hum abhi kis component ko click keye hai.

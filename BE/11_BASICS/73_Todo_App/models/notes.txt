@@ -1,0 +1,1 @@
+model ke andr hum database ka schema define krte hai ke database dikhta kaisa hai ?

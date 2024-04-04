@@ -1,0 +1,24 @@
+.MoveCoin{
+ position: relative;
+ >:nth-child(1){
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+ }
+}
+
+.boardContainer{
+ height: 25rem;
+ width: 31rem;
+ display: flex;
+ flex-wrap: wrap;
+ >div{
+  background-color: red;
+  height: fit-content;
+  >img{
+   cursor: pointer;
+   height: 3rem;
+  }
+ }
+}

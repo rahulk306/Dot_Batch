@@ -1,0 +1,47 @@
+use effect ( it is a hook ) -> manages side effects -> a change happening on outside the rendering item not on the item itself
+
+ye sb practice keye the project start krne se pehle
+function App() {
+
+    const[text, setText] = useState('');
+    const[name, setName] = useState('love');
+
+    // variation 1 -> Every Reader
+    // useEffect( () => {
+    //   console.log("UI RENDERING DONE");
+    // });
+
+    // variation 2 -> First Render
+    // useEffect( () => {
+    //   console.log("UI RENDERED");
+    // },[]);
+    // here the second arg is the dependency list
+
+    // varitaion 3 -> on first render + whenever dependecy changes
+    // useEffect( () => {
+    //   console.log("change observed")
+    // }, [name]);
+
+    // variation 4 -> to handle unmounting of a component
+    useEffect( () => {
+      // add event listner
+      console.log("listner added");
+
+      return () =>{
+        console.log("listner removed");
+      }
+    }, [text]);
+
+    function changeHandler(event){
+      console.log(text);
+      setText(event.target.value);
+    }
+
+    return(
+      <div className="App">
+        <input type='text' onChange={changeHandler}></input>
+      </div>
+    );
+}
+
+export default App;

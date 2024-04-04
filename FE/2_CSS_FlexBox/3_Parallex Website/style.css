@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;/*Through this we are creating space of 10px b/w our eye and z-index.*/
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+    transform-style: preserve-3d;/*Hum jaha #d game khelna chate hai waha isse dalna hoga nhi toh game 2d me hi chalegi.*/
+    z-index: -1;/*It tolds us which layer will come first.*/
+}
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    object-fit: cover;/*pura width cover kar legi.*/
+}

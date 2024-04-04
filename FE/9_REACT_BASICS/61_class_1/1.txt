@@ -1,0 +1,68 @@
+React is a predefined library in js. (we can assume as STL in cpp)
+- React has its own way of handling state and props.
+- We need to install react, react dom as dev dependencies for our project using npm i --save-dev <package name> command or yarn add
+- State: It’s similar to the data source from which we get updates.
+- Props: They are like parameters that you pass into components, they allow us to customize them for different use cases.
+- If you modify the state directly, React will not recognize it as a change because it uses shallow comparison.
+- Props: They are like properties that are passed onto a component. These should not be changed by the child components.
+
+react is used to create using
+
+react is all about components
+
+react is component based architecture as cpp is function based architecture
+
+component - it is a reusable peace of code in react it is nothing but function 
+
+// khud me yaad rkhna react ek custom html elements hi hai 😎
+
+JS is based on imperative approach so we needed react. imperative approach -> detail me btana hota hai ke kya kya krna hai jaise iss element ko fetch kro phi ye kro wo kro pr react me direct end state bta dena hota hai bs kaam ho jta hai.  jaise bina stl ke hume container define krna prta hai pr stl ke saath direct container ko use kr lete hai.. koi low level details nhi dena prta hai react me.
+
+imperative ka opposite hota hai declarative approach jo ki react me krte hai.
+
+// SPA approach -> single page application
+
+int spa only one html file is loaded and we do dynamically changes so that we don't need multiple html pages. we make changes in the same html file.
+
+weather app me hum dynamically approach ka use keye the, temp fetch kr ke show krte the ui pr.
+
+// react alternatives -> angular, vui
+
+// COMPONENTS 
+    let ek button hai jisko 15-20 baar use krna hai to kya hum hr jgh uska code copy paste krenge -> nhi hum usko ek component me convert kr denge phir hr jgh usko component ka naam use kr lnege bssss.. yh ek type ka function hi hai
+
+// WHY REACT
+->reusability
+->dry
+->readability
+->soc seperation of code 
+-> maintainability
+
+// STEPS TO CREATE A NEW SINGLE PAGE REACT APP BELOW
+
+1-> install node js
+2-> VS code
+3-> create a new folder -> ReactFolio (koi bhi naam de dena)
+4-> change directory to that folder
+5-> npx create-react-app demoshopapp ( jo naam se app bnana chahte ho wo naam de dena bs)
+6-> change directory to demoshopapp
+7-> npm start
+
+
+
+// ye sb demoshopapp ke andr ke baatein hai
+
+package.json -> version/source/description wagera rehta hai 
+
+src -> app.js, index.css, index.js  ye teeno file ko dekhne ke need hai src folder me.
+
+public -> index.html -> root 
+
+node_module
+
+
+// flow in react 
+
+index.js is the entry point in react
+
+index.js -> index.html -> root div -> react root -> render -> app component -> app.js -> render html (jo bhi likhna hai yhi likh denge). 

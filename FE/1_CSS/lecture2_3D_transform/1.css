@@ -1,0 +1,17 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.translated{
+    transform: perspective(20px) translateZ(-12px);
+    /* -ve me translate krne ke wo block humse dur yaani andar ke trf chla jyega */
+}
+
+.scaled{
+    margin-left: 200px;
+    transform: rotateZ(45deg);
+    /* transform: perspective(350px) scaleZ(6) rotateX(45deg) rotateY(30deg); */
+}
