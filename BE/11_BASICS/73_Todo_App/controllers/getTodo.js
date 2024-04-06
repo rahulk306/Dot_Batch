@@ -3,7 +3,7 @@ const Todo = require("../models/Todo");
 
 exports.getTodo = async(req, res) => {
   try{
-        // getch all todo items from the database
+        // get all todo items from the database
         const todos = await Todo.find({});
 
         // response

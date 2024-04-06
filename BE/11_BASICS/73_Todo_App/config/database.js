@@ -3,7 +3,7 @@
 
 const mongoose = require("mongoose");
 
-require("dotenv").config();
+require("dotenv").config(); // jo bhi environemnt ke andr define hoga wo load ho jyega process object ke andr
 
 const dbConnect = () => {
     mongoose.connect(process.env.DATABASE_URL, {

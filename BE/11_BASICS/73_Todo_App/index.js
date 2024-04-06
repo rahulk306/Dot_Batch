@@ -20,7 +20,7 @@ app.use(express.json());
 // import routes for Todo API
 const todoRoutes = require("./routes/todos");
 
-// mount the todo API routes
+// mount the todo API routes version ke leye likhe hai bs kuch need nhi hai 
 app.use("/api/v1", todoRoutes);
 
 // start server
@@ -34,5 +34,5 @@ dbConnect();
 
 // default Route
 app.get("/", (req,res) => {
-  res.send(`<h1> This is HOMEPAGE baby</h1>`);
+  res.send(`<h2> This is HOMEPAGE baby</h1>`);
 })
